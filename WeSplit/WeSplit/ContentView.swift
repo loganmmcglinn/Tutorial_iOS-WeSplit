@@ -46,7 +46,7 @@ struct ContentView: View {
                         .keyboardType(.decimalPad)
                 }
                 
-                Section(header: Text("How much tip do you want to leave?")) {
+                Section(header: Text("How much of a tip do you want to leave?")) {
                     Picker("Tip percentage", selection: $tipPercentage) {
                         ForEach(0 ..< tipPercentages.count) {
                             Text("\(self.tipPercentages[$0])%")
